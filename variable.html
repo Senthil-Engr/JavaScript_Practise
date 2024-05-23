@@ -32,6 +32,34 @@
         var x = "lee";
         var x = 10;
         console.log(x);
+
+        //redeclaring let with different block
+        let y = 2;   // Allowed
+
+        {
+        let y = 3;   // Allowed
+        console.log(y);
+
+        }
+
+        {
+        let y = 4;    // Allowed
+        console.log(y);
+
+        }
+        console.log(y);
+
+    //------------------------------------------------------//
+        /*hoisting ( Using a let variable before 
+        it is declared will result in a ReferenceError) 
+        */
+        carName = "Tata";
+        let carName;
+        console.log(carName);
+    //------------------------------------------------------//
+
+    
+
     </script>
 </body>
 </html>
